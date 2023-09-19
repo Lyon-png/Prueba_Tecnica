@@ -1,0 +1,113 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+<div class="content">
+
+    <div class="left">
+
+        <mat-card class="left_card">
+   
+          <mat-card-title class="left_title">Marcas</mat-card-title>
+          <mat-card-content>   
+            <ul class="checklist">
+              <li><mat-checkbox>Apple</mat-checkbox></li>
+              <li><mat-checkbox>HP</mat-checkbox></li>
+              <li><mat-checkbox>Lenovo</mat-checkbox></li>
+              <li><mat-checkbox>Dell</mat-checkbox></li>
+              <li><mat-checkbox>Acer</mat-checkbox></li>
+              <li><mat-checkbox>Asus</mat-checkbox></li>
+              <li><mat-checkbox>MSI</mat-checkbox></li>
+              <li><mat-checkbox>Razer</mat-checkbox></li>
+            </ul>
+            </mat-card-content>
+          <mat-card-title class="left_title">Precio</mat-card-title>
+          <mat-card-content>
+            
+            <div class="forms">
+            <mat-form-field>
+              <input matInput placeholder="minimo" type="number" class="example-right-align">
+              <span matPrefix>$&nbsp;</span>
+              <span matSuffix>.00</span>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="maximo" type="number" class="example-right-align">
+              <span matPrefix>$&nbsp;</span>
+              <span matSuffix>.00</span>
+            </mat-form-field>
+            </div>
+          </mat-card-content>
+
+          <mat-card-title class="left_title">Reviews</mat-card-title>
+          <mat-card-title class="left_title">Memoria</mat-card-title>
+          <mat-card-title class="left_title">Rango</mat-card-title>
+          <mat-card-title class="left_title">Camara</mat-card-title>
+          
+        </mat-card>
+
+    </div>
+
+    <div class="right">
+
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><h3>{{dxps.nombre}}</h3></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/images/DXPS.jpg" alt="DELL XPS">
+            <mat-card-content>
+              <p>
+                {{dxps.precio}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="button">Lo quiero</button>
+            </mat-card-actions>
+          </mat-card>
+          
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><h3>{{di14.nombre}}</h3></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/images/DI14.jpg" alt="DELL Inspiration 14">
+            <mat-card-content>
+              <p>
+                {{di14.precio}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="button">Lo quiero</button>
+            </mat-card-actions>
+          </mat-card>
+
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><h3>{{slgo.nombre}}</h3></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/images/SLGO.jpg" alt="Surface Laptop GO">
+            <mat-card-content>
+              <p>
+                {{slgo.precio}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="button">Lo quiero</button>
+            </mat-card-actions>
+          </mat-card>
+
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><h3>{{lcd3.nombre}}</h3></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/images/LCD3.jpg" alt="Lenovo Chromebook Duet 3">
+            <mat-card-content>
+              <p>
+                {{lcd3.precio}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="button">Lo quiero</button>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+  
+</div>
+</div>

@@ -1,0 +1,87 @@
+.example-card {
+    max-width: 400px;
+    background-color: #D3D3D3;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+
+.left_card {
+    max-width: 500px;
+    background-color: white;
+    margin: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.container {
+    background-color: #f3ebeb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+
+p {
+  font-size: 30px;
+  font-weight: 600;
+  color: #0047b9;
+  text-align: end;
+}
+
+button {
+  background-color: yellow;
+  color: #0047b9;
+}
+
+button:hover {
+  background-color: #0047b9;
+  color: yellow;
+}
+
+.checklist li {
+  list-style-type: none;
+}
+
+.forms{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.left_title {
+  color: #0047b9;
+  font-size: 20px;
+  margin: 15px;
+  border-bottom: 1px solid black;
+}
+
+
+
+@media (max-width: 999px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left_card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .right {
+    align-content: center;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,36 @@
+<header>
+    <div class="container">
+                <div class="logo">
+                    <img src="../../../../assets/images/logo.png" alt="Logo">
+                </div>
+
+            <div class="right">
+
+            <div class="buttons">
+                <button mat-button class="register">Crea tu cuenta</button>
+                <button mat-button class="login">Iniciar sesion</button>
+            </div>
+
+                <div class="menu-icon" [class.menu_icon_class]="menuIconVariable" (click)="openMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu" [class.menuClass]="menuVariable">
+                    <ul>
+                       <li>Home</li>
+                       <li (click)="navigateCell()">Celulares</li>
+                       <li (click)="navigatePC()">Computadoras</li>
+                       <li>Tus Prestamos</li>
+                       <li>Tiendas</li>
+                       <li>Tracking</li>
+                       <li>Club Macropay</li>
+                    </ul>
+                </div> 
+   
+            </div>
+
+    </div>
+
+
+</header>

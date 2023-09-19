@@ -1,0 +1,114 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+<div class="content">
+
+    <div class="left">
+
+        <mat-card class="left_card">
+   
+          <mat-card-title class="left_title">Marcas</mat-card-title>
+          <mat-card-content>   
+            <ul class="checklist">
+              <li><mat-checkbox>Apple</mat-checkbox></li>
+              <li><mat-checkbox>Motorola</mat-checkbox></li>
+              <li><mat-checkbox>Huawei</mat-checkbox></li>
+              <li><mat-checkbox>Xiaomi</mat-checkbox></li>
+              <li><mat-checkbox>Oppo</mat-checkbox></li>
+              <li><mat-checkbox>Realme</mat-checkbox></li>
+              <li><mat-checkbox>Honor</mat-checkbox></li>
+              <li><mat-checkbox>Samsung</mat-checkbox></li>
+            </ul>
+            </mat-card-content>
+          <mat-card-title class="left_title">Precio</mat-card-title>
+          <mat-card-content>
+            
+            <div class="forms">
+            <mat-form-field>
+              <input matInput placeholder="minimo" type="number" class="example-right-align">
+              <span matPrefix>$&nbsp;</span>
+              <span matSuffix>.00</span>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="maximo" type="number" class="example-right-align">
+              <span matPrefix>$&nbsp;</span>
+              <span matSuffix>.00</span>
+            </mat-form-field>
+            </div>
+          </mat-card-content>
+
+          <mat-card-title class="left_title">Reviews</mat-card-title>
+          <mat-card-title class="left_title">Memoria</mat-card-title>
+          <mat-card-title class="left_title">Rango</mat-card-title>
+          <mat-card-title class="left_title">Camara</mat-card-title>
+          
+        </mat-card>
+
+    </div>
+
+    <div class="right">
+
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><h3>{{sga3.nombre}}</h3></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/images/SGA03.jpg" alt="Samsung GA03">
+            <mat-card-content>
+              <p>
+                {{sga3.precio}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="button">Lo quiero</button>
+            </mat-card-actions>
+          </mat-card>
+          
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><h3>{{sga10.nombre}}</h3></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/images/SGA10.jpg" alt="Samsung GA10">
+            <mat-card-content>
+              <p>
+                {{sga10.precio}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="button">Lo quiero</button>
+            </mat-card-actions>
+          </mat-card>
+
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><h3>{{sga12.nombre}}</h3></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/images/SGA12.jpg" alt="Samsung GA12">
+            <mat-card-content>
+              <p>
+                {{sga12.precio}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="button" (click)="openDialog()">Lo quiero</button>
+            </mat-card-actions>
+          </mat-card>
+
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title><h3>{{sga13.nombre}}</h3></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/images/SGA13.jpg" alt="Samsung GA13">
+            <mat-card-content>
+              <p>
+                {{sga13.precio}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="button">Lo quiero</button>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+  
+</div>
+</div>
+<app-footer></app-footer>
